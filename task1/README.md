@@ -8,6 +8,8 @@ For this task, we'll be creating the wireframes to understand how the app is goi
 
 ### Step 1: Signing up for Figma
 
+ We used Figma to build our wireframe.
+
 > #### Useful Resources for this step
 > - [Figma website](https://www.figma.com)
 > - [Figma - Minimalistic Todo App Design](https://www.youtube.com/watch?v=crv02kWqfZ0)
@@ -45,4 +47,5 @@ Create the following Mock designs
     > - Reset button 
 
 ## Results
-
+   The wireframe we created:
+  (https://www.figma.com/file/npVmZsyWvNoJF14ZDXDxP6/Untitled?node-id=0%3A1)
