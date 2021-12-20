@@ -11,12 +11,16 @@
     <title>Home Page</title>
   </head>
   <body>
-    <h1>Home Page</h1>
+    <h1 class="text-center">Task Manager</h1>
+    <br>
     
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Add Task
-  </button>
+    <div class="text-center">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+            Add Task
+          </button>
+    </div>
+
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -30,16 +34,16 @@
         </div>
         <div class="modal-body">
             <form>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
+                
+                  <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" class="form-control" id="name">
                   </div>
-                  <div class="form-group col-md-6">
+                  <div class="form-group">
                     <label for="description">Description:</label>
                     <textarea class="form-control" id="description" rows="2"></textarea>
                   </div>
-                </div>
+                
                 <div class="form-group">
                   <label for="assignedto">Assigned To:</label>
                   <input type="text" class="form-control" id="assignedto">
@@ -50,14 +54,14 @@
                   
                     <label for="duedate">Due Date:</label>
 
-                    <input type="date" class="formcontrol" id="duedate" placeholder="dd/mm/yyyy">
+                    <input type="date" class="form-control" id="duedate" placeholder="dd/mm/yyyy">
                </div>
 
                     <div class="form-group">
                       <label for="status">Status</label>
 
                     <select id="status" class="form-control">
-                      <option selected>Choose...</option>
+                      <!-- <option selected>Choose...</option> -->
                       <option value="todo">To Do</option>
                       <option value="inprogress">In Progress</option>
                       <option value="review">Review</option>
@@ -68,15 +72,33 @@
             
                   
               </form>
+
+            
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Reset</button>
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-success">Submit</button>
         </div>
       </div>
     </div>
   </div>
-
+    <!-- card list layout -->
+    <ul>
+        <li class="list-group-item">
+            <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                <h5>Cook Haleem</h5>
+                <span class="badge badge-danger">TODO</span>
+            </div>
+            <div class="d-flex w-100 mb-3 justify-content-between">
+                <small>Assigned To: Zakiya</small>
+                <small>Due: 25/12/2021</small>
+            </div>
+            <p>Buy Groceries from the store. Checklist on phone</p>
+            <p><button class="edit btn btn-info btn-sm" name="edit">EDIT</button>
+                <button class="delete btn btn-info btn-sm" name="delete">DELETE</button>
+                </p>
+        </li>
+    </ul>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
